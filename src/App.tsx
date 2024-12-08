@@ -1,10 +1,16 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Navbar } from "./components/ui";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="text-red-700">React App with <span className="text-blue-700">Tailwind</span> </h1>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/about" element={<h1>About</h1>} />
+        <Route path="/contact" element={<h1>Contact</h1>} />
+      </Routes>
+    </Router>
   );
 }
 
