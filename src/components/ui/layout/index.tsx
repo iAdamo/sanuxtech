@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,12 +8,15 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-steelBlue text-white shadow-lg">
+    <nav className="bg-steelBlue shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-lg font-semibold">
+            <a
+              href="/"
+              className="text-sm sm:text-base md:text-lg font-semibold"
+            >
               SANUX TECHNOLOGIES
             </a>
           </div>
@@ -131,9 +134,15 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-col justify-center items-center bg-green-500">
           {/* Footer Links */}
           <div className="flex space-x-4 mb-4 md:mb-0">
-            <a href="/privacy" className="hover:text-gray-200">Privacy Policy</a>
-            <a href="/terms" className="hover:text-gray-200">Terms of Service</a>
-            <a href="/contact" className="hover:text-gray-200">Contact Us</a>
+            <a href="/privacy" className="hover:text-gray-200">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="hover:text-gray-200">
+              Terms of Service
+            </a>
+            <a href="/contact" className="hover:text-gray-200">
+              Contact Us
+            </a>
           </div>
 
           {/* Copyright Info */}
