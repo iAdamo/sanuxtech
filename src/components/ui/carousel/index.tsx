@@ -43,9 +43,7 @@ export const SkillsCarousel = () => {
 
   return (
     <div className="mx-6 flex flex-col self-stretch">
-      <div className="">
-        <h1 className="text-2xl text-primary-500 font-bold">Skills</h1>
-      </div>
+
       <div className="p-2 w-full justify-center items-center">
         <Slider {...settings}>
           {[

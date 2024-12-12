@@ -31,6 +31,25 @@ export const HomeScreen = () => {
       </div>
       {/** skills */}
       <SkillsCarousel />
+      <article className="w-full bg-red-400 p-6 flex flex-col gap-4">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold">Our Services</h2>
+          <p className="text-lg">
+            We offer a wide range of services to meet your needs.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="bg-white p-4 shadow-lg rounded-lg">Service 1</div>
+          <div className="bg-white p-4 shadow-lg rounded-lg">Service 2</div>
+          <div className="bg-white p-4 shadow-lg rounded-lg">Service 3</div>
+          <div className="bg-white p-4 shadow-lg rounded-lg">Service 4</div>
+          <div className="bg-white p-4 shadow-lg rounded-lg">Service 1</div>
+          <div className="bg-white p-4 shadow-lg rounded-lg">Service 2</div>
+          <div className="bg-white p-4 shadow-lg rounded-lg">Service 3</div>
+          <div className="bg-white p-4 shadow-lg rounded-lg">Service 4</div>
+          {/* Add more service squares as needed */}
+        </div>
+      </article>
     </section>
   );
 };
